@@ -70,9 +70,32 @@ licitai-budget-auditing/
 
 ## Screenshots
 
-Screenshots will be added soon.
+### Welcome Screen
+
+![Welcome Screen](screenshots/welcome-screen.png)
+
+
+### File Upload Module
+
+![File Upload](screenshots/file-upload.png)
 
 ---
+
+### Cost Analysis Dashboard
+
+![Dashboard](screenshots/cost-analysis-dashboard.png)
+
+---
+
+### Anomaly Detection
+
+![Anomaly Detection](screenshots/anomaly-detection.png)
+
+---
+
+### Reports Module
+
+![Reports](screenshots/reports-module.png)
 
 ## Author
 
