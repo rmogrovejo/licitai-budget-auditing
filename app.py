@@ -11,14 +11,22 @@ from datetime import datetime
 from difflib import SequenceMatcher
 from sklearn.ensemble import IsolationForest
 
+# --- CÓDIGO INMUTABLE PARA OCULTAR TODO LOGO/PERFIL DE STREAMLIT ---
 hide_streamlit_style = """
     <style>
+    /* Ocultar el menú de opciones superior */
     #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    .stApp [data-testid="stToolbar"] {display: none;}
-    .viewerBadge_container__1QSob {display: none !important;}
-    .viewerBadge_link__1S137 {display: none !important;}
-    div[data-testid="stDecoration"] {display: none !important;}
+    
+    /* Ocultar el pie de página clásico */
+    footer {visibility: hidden; display: none !important;}
+    
+    /* SELECTOR COMODÍN: Borra el perfil y el banner rojo 'Hosted with Streamlit' */
+    [class*="viewerBadge"] { display: none !important; }
+    [class*="ViewerBadge"] { display: none !important; }
+    
+    /* Eliminar barras de herramientas flotantes de la nube */
+    [data-testid="stToolbar"] { display: none !important; }
+    div[data-testid="stDecoration"] { display: none !important; }
     </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
