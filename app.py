@@ -11,6 +11,18 @@ from datetime import datetime
 from difflib import SequenceMatcher
 from sklearn.ensemble import IsolationForest
 
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stApp [data-testid="stToolbar"] {display: none;}
+    .viewerBadge_container__1QSob {display: none !important;}
+    .viewerBadge_link__1S137 {display: none !important;}
+    div[data-testid="stDecoration"] {display: none !important;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 # pdfplumber es opcional: si no está instalado, la app sigue funcionando con Excel.
 # Solo se exigirá cuando el usuario suba un .pdf en Datos Base.
 try:
